@@ -70,7 +70,7 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 * **Model Impact:** An imbalanced dataset may bias the model toward well-represented classes, reducing accuracy for underrepresented labels.
 * **Healthcare Implications:** Underrepresentation could lead to misdiagnoses in real-world scenarios if not properly addressed.
 
-### ⚖️ Three Partition Label Distribution
+### ⚖️ Three Partition Distribution
 *Displays how many images exist per Fitzpatrick skin tone (x-axis) and diagnosis label (color/hue).*
 
 <img src="EDA_Visualizations/partition.png" alt="EDA Visualization" width="600">
@@ -79,7 +79,7 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 * There are far more images for lighter skin tones (e.g., scale 2 or 3) than darker tones (e.g., scale 5 or 6). This imbalance can cause the model to perform better on lighter tones and poorly on darker ones, potentially perpetuating healthcare disparities.
 * Addressing underrepresentation is crucial for fairness and reducing misdiagnosis in darker skin tones; this can be achieved through targeted data augmentation, balanced sampling, and model adjustments like class weighting and fine-tuning.
 
-### ⚖️ Label Distribution by Fitzpatrick Scale
+### ⚖️ Fitzpatrick Scale Distribution
 *Compares the counts of images grouped into three overarching diagnostic categories—malignant, non-neoplastic, and benign.* 
 
 <img src="EDA_Visualizations/fitzpatrick.png" alt="EDA Visualization" width="600">
