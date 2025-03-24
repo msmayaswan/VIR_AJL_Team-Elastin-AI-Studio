@@ -60,12 +60,35 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 
 * The data exploration and preprocessing involved loading the dataset from CSV files, creating full file paths for images by combining the label and md5hash columns, and encoding the categorical label column into numerical values using LabelEncoder(). Additionally, the dataset was split into 80% for training and 20% for validation. These steps helped prepare the data for use in training a machine learning model while ensuring compatibility and efficiency in the process.
 
-### Label Distribution in Training Data
+### ⚖️ Label Distribution in Training Data: Skin Condition Sample Count
+*Displays the number of training images per skin condition (x-axis: image count, y-axis: conditions sorted by frequency).*
 
-### Three Partition Label Distribution
+<img src="EDA_Visualizations/labels.png" alt="EDA Visualization" width="600">
 
-### Label Distribution by Fitzpatrick Scale
+**Insights**: 
+* **Class Imbalance:** Dominant classes (e.g., squamous-cell-carcinoma) vastly outnumber rarer ones (e.g., basal-cell-carcinoma-morpheaform).
+* **Model Impact:** An imbalanced dataset may bias the model toward well-represented classes, reducing accuracy for underrepresented labels.
+* **Healthcare Implications:** Underrepresentation could lead to misdiagnoses in real-world scenarios if not properly addressed.
 
+### ⚖️ Three Partition Label Distribution
+*Displays how many images exist per Fitzpatrick skin tone (x-axis) and diagnosis label (color/hue).*
+
+<img src="EDA_Visualizations/partition.png" alt="EDA Visualization" width="600">
+
+**Insights**: 
+* There are far more images for lighter skin tones (e.g., scale 2 or 3) than darker tones (e.g., scale 5 or 6). This imbalance can cause the model to perform better on lighter tones and poorly on darker ones, potentially perpetuating healthcare disparities.
+* Addressing underrepresentation is crucial for fairness and reducing misdiagnosis in darker skin tones; this can be achieved through targeted data augmentation, balanced sampling, and model adjustments like class weighting and fine-tuning.
+
+### ⚖️ Label Distribution by Fitzpatrick Scale
+*Compares the counts of images grouped into three overarching diagnostic categories—malignant, non-neoplastic, and benign.* 
+
+<img src="EDA_Visualizations/fitzpatrick.png" alt="EDA Visualization" width="600">
+
+**Insights:**
+* **Imbalance in Samples:** Malignant conditions dominate, followed by non-neoplastic, with benign conditions being the least represented.
+* **Model Bias:** A model may learn to better detect malignant features, reducing accuracy for benign and non-neoplastic conditions.
+* **Clinical Implications:** Misclassification can lead to unnecessary treatments or missed diagnoses, impacting patient care.
+* **Mitigation Strategies:** Use data augmentation, class weighting, or collect more benign samples to balance the dataset and improve model performance.
 
 ---
 
