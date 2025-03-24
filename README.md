@@ -1,16 +1,16 @@
-# GitHub Kaggle Project README Template
+Equitable AI for Dermatology
 
 ⚠️ _Remember to update the above title and remove all guidance notes and examples in this template, before finalizing your README_
 
 ---
 
-### **👥 Team Members**
-
 | Name | GitHub Handle | Contribution |
 | ----- | ----- | ----- |
-| Alice Doe | @AliceDoe | Built CNN model, performed data augmentation |
-| Mel Ramakrishnan | @MelRam | Led EDA, visualized dataset distributions, handled missing data |
-| Charlie Nguyen | @CharlieN | Implemented explainability tools |
+| Maya Swan | [@msmayaswan](https://github.com/msmayaswan) | Performed EDA, built inital model |
+| Julia Husainzada | [@juliahusainzada](https://github.com/juliahusainzada) | Performed EDA, performed data augmentation |
+| Isabella Alfaro | [@IsabellaAlfaro](https://github.com/IsabellaAlfaro) | Finetuned Xception model, improved accuracy score |
+| Be-Once' Marsh | [@beonce](https://github.com/beonce) | Handled missing data |
+| Michelle Cao | [@mcao694](https://github.com/mcao694) | Finetuning model | 
 
 ---
 
@@ -18,13 +18,12 @@
 
 **Example:**
 
-* Built a \[insert model type\] using \[techniques used\] to solve \[Kaggle competition task\]
-* Achieved an F1 score of \[insert score\] and a ranking of \[insert ranking out of participating teams\] on the final Kaggle Leaderboard
-* Used \[explainability tool\] to interpret model decisions
-* Implemented \[data preprocessing method\] to optimize results within compute constraints
+Built an Xception model using transfer learning and fine-tuning to accomplish the tas of building an ML model to classify skin conditions across diverse skin tones.
+* Ranked 21th on the final Kaggle Leaderboard with a F1 score of 0.55188
+* Used Tensorflow to interpret model decisions and improve performance
+* Implemented data preprocessing to optimize results within compute constraints
 
 🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
-🔗 [WiDS Datathon 2025 | Kaggle Competition Page](https://www.kaggle.com/competitions/widsdatathon2025/overview)
 
 ---
 
@@ -42,11 +41,14 @@
 
 ## **🏗️ Project Overview**
 
-**Describe:**
+Describe:
+Our project is part of a Kaggle competition connected to the Break Through Tech AI Program, which focuses on advancing diversity and inclusion in artificial intelligence. This competition challenges participants to develop equitable AI solutions that address real-world biases in machine learning.
 
-* The Kaggle competition and its connection to the Break Through Tech AI Program
-* The objective of the challenge
-* The real-world significance of the problem and the potential impact of your work
+The Objective of the Challenge:
+The goal of this challenge is to build a machine learning model that can accurately classify skin conditions across diverse skin tones. By ensuring that the model performs well across different skin types, we aim to create a more inclusive AI system that does not disproportionately favor lighter skin tones, a common issue in existing dermatology AI models.
+
+Real-World Significance and Impact:
+Skin condition detection plays a critical role in healthcare, influencing early diagnosis and treatment outcomes. However, AI models in dermatology often lack diverse training data, leading to biased predictions that fail to serve underrepresented populations. By participating in this challenge, we contribute to advancing equity in AI by developing a model that centers on those historically excluded in medical AI applications. Our work has the potential to improve access to accurate dermatological assessments for all individuals, regardless of their skin tone.
 
 ---
 
@@ -54,9 +56,9 @@
 
 **Describe:**
 
-* The dataset(s) used (i.e., the data provided in Kaggle \+ any additional sources)
-* Data exploration and preprocessing approaches
-* Challenges and assumptions when working with the dataset(s)
+* The dataset is a subset of the FitzPatrick17k dataset, a labeled collection of about 17,000 images depicting a variety of serious (e.g., melanoma) and cosmetic (e.g., acne) dermatological conditions with a range of skin tones scored on the FitzPatrick skin tone scale (FST). About 4500 images are in this set, representing 21 skin conditions out of the 100+ in the full FitzPatrick set.
+
+* The data exploration and preprocessing involved loading the dataset from CSV files, creating full file paths for images by combining the label and md5hash columns, and encoding the categorical label column into numerical values using LabelEncoder(). Additionally, the dataset was split into 80% for training and 20% for validation. These steps helped prepare the data for use in training a machine learning model while ensuring compatibility and efficiency in the process.
 
 **Potential visualizations to include:**
 
@@ -92,11 +94,6 @@
 ## **🖼️ Impact Narrative**
 
 **Answer the relevant questions below based on your competition:**
-
-**WiDS challenge:**
-
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-2. How could your work help contribute to ADHD research and/or clinical care?
 
 **AJL challenge:**
 
