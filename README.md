@@ -60,9 +60,12 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 
 * The data exploration and preprocessing involved loading the dataset from CSV files, creating full file paths for images by combining the label and md5hash columns, and encoding the categorical label column into numerical values using LabelEncoder(). Additionally, the dataset was split into 80% for training and 20% for validation. These steps helped prepare the data for use in training a machine learning model while ensuring compatibility and efficiency in the process.
 
-**Potential visualizations to include:**
+### Label Distribution in Training Data
 
-* Plots, charts, heatmaps, feature visualizations, sample dataset images
+### Three Partition Label Distribution
+
+### Label Distribution by Fitzpatrick Scale
+
 
 ---
 
