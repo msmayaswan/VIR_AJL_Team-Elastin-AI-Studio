@@ -63,7 +63,7 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 ### ⚖️ Label Distribution in Training Data: Skin Condition Sample Count
 *Displays the number of training images per skin condition (x-axis: image count, y-axis: conditions sorted by frequency).*
 
-<img src="EDA_Visualizations/labels.png" alt="EDA Visualization" width="600">
+<img src="EDA_Visualizations/labels1.png" alt="EDA Visualization" width="600">
 
 **Insights**: 
 * **Class Imbalance:** Dominant classes (e.g., squamous-cell-carcinoma) vastly outnumber rarer ones (e.g., basal-cell-carcinoma-morpheaform).
