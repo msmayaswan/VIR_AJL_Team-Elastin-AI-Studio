@@ -104,7 +104,7 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 * **50% Dropout** for improved generalization.  
 * **Softmax Output Layer** (114 classes).  
 
-## ⚙️ Training Configuration  
+### ⚙️ Training Configuration  
 ### **Optimization Setup:**  
 * **Optimizer**: Adam (initial LR = 1e-4).  
 * **Loss Function**: Sparse Categorical Crossentropy.  
@@ -115,7 +115,7 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 * **L2 Weight Decay** (λ=0.01).  
 * **Dropout (50%)** in the classification head.  
 
-## 📊 Training Performance  
+### 📊 Training Performance  
 ### **Dataset Configuration:**  
 * **Training/Validation Split**: 80% / 20% (stratified sampling).  
 * **Batch Size**: 32.  
