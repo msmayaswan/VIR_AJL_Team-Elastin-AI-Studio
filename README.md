@@ -19,7 +19,7 @@ Equitable AI for Dermatology
 **Example:**
 
 Built an Xception model using transfer learning and fine-tuning to accomplish the tas of building an ML model to classify skin conditions across diverse skin tones.
-* Ranked 21th on the final Kaggle Leaderboard with a F1 score of 0.55188
+* Ranked 21st on the final Kaggle Leaderboard with a F1 score of 0.55188
 * Used Tensorflow to interpret model decisions and improve performance
 * Implemented data preprocessing to optimize results within compute constraints
 
