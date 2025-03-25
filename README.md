@@ -94,11 +94,36 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
+### **Base Model:**  
+* **Xception Network** pre-trained on ImageNet (fine-tuned end-to-end).  
 
-* Model(s) used (e.g., CNN with transfer learning, regression models)
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+### **Custom Classification Head:**  
+* **Global Average Pooling** layer.  
+* **Fully Connected Layer**: 1024 units, ReLU activation.  
+* **L2 Weight Regularization** (λ=0.01) to mitigate overfitting.  
+* **50% Dropout** for improved generalization.  
+* **Softmax Output Layer** (114 classes).  
+
+## ⚙️ Training Configuration  
+### **Optimization Setup:**  
+* **Optimizer**: Adam (initial LR = 1e-4).  
+* **Loss Function**: Sparse Categorical Crossentropy.  
+* **Learning Rate Scheduling**: ReduceLROnPlateau (factor=0.2, patience=3).  
+* **Early Stopping**: Monitored validation loss (patience=5, restores best weights).  
+
+### **Regularization Strategy:**  
+* **L2 Weight Decay** (λ=0.01).  
+* **Dropout (50%)** in the classification head.  
+
+## 📊 Training Performance  
+### **Dataset Configuration:**  
+* **Training/Validation Split**: 80% / 20% (stratified sampling).  
+* **Batch Size**: 32.  
+* **Training Epochs**: 20 (early stopping applied).  
+
+### **Model Performance:**  
+* **Training Accuracy**: 100%
+* **Validation Accuracy**: ~58%
 
 ---
 
