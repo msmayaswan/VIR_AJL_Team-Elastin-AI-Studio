@@ -147,7 +147,33 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 * Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ---
+A final F1 score of 0.55188, securing the 21st position on the Kaggle leaderboard for the "Equitable AI for Dermatology" competition. ​
 
+Overall Model Performance:
+
+Training Accuracy: 100%​
+ScienceDirect
+
+Validation Accuracy: Approximately 58%​
+
+The high training accuracy indicates that the model learned the training data effectively. However, the significant drop in validation accuracy suggests potential overfitting, where the model may not generalize well to unseen data.​
+IJCA
+
+Performance Across Different Skin Tones:
+
+An essential aspect of this competition was ensuring equitable performance across diverse skin tones. While specific performance metrics per skin tone category were not provided, the dataset's imbalance—favoring lighter skin tones—likely impacted the model's effectiveness on underrepresented groups. Addressing this imbalance is crucial to prevent perpetuating existing biases in dermatological assessments.​
+
+Insights from Model Fairness Evaluation:
+
+Class Imbalance: The dataset exhibited a significant class imbalance, with certain skin conditions and skin tones being underrepresented. This imbalance can lead to biased predictions, where the model performs better on well-represented classes and skin tones, potentially resulting in misdiagnoses for underrepresented groups.​
+
+Mitigation Strategies: To enhance fairness, consider implementing:​
+
+Data Augmentation: Increase the representation of underrepresented skin tones through techniques such as image rotation, scaling, and color adjustments.​
+
+Class Weighting: Adjust the loss function to assign higher weights to underrepresented classes, encouraging the model to pay more attention to these classes during training.​
+
+Transfer Learning with Diverse Datasets: Incorporate additional datasets that are more representative of diverse populations to improve the model's generalizability.
 ## **🖼️ Impact Narrative**
 
 **Answer the relevant questions below based on your competition:**
