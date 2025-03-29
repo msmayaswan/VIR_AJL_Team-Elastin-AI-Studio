@@ -1,7 +1,5 @@
 Equitable AI for Dermatology
 
-⚠️ _Remember to update the above title and remove all guidance notes and examples in this template, before finalizing your README_
-
 ---
 
 | Name | GitHub Handle | Contribution |
@@ -16,8 +14,6 @@ Equitable AI for Dermatology
 
 ## **🎯 Project Highlights**
 
-**Example:**
-
 Built an Xception model using transfer learning and fine-tuning to accomplish the tas of building an ML model to classify skin conditions across diverse skin tones.
 * Ranked 21st on the final Kaggle Leaderboard with a F1 score of 0.55188
 * Used Tensorflow to interpret model decisions and improve performance
@@ -31,11 +27,21 @@ Built an Xception model using transfer learning and fine-tuning to accomplish th
 
 **Provide step-by-step instructions so someone else can run your code and reproduce your results. Depending on your setup, include:**
 
-* How to clone the repository
-* How to install dependencies
-* How to set up the environment
-* How to access the dataset(s)
-* How to run the notebook or scripts
+* Clone the repo: git clone https://github.com/YOUR_GITHUB_USERNAME/equitable-ai-dermatology.git
+cd equitable-ai-dermatology
+* Install dependencies: pip install -r requirements.txt
+* Set Up Kaggle API & Download Dataset: Sign in to Kaggle
+
+Go to "Account Settings" > "API" and click Create New API Token
+
+Download the kaggle.json file
+
+Move it to ~/.kaggle/ (Linux/macOS) or C:\Users\<YourUsername>\.kaggle\ (Windows)
+
+Run the following command to download the dataset: kaggle competitions download -c bttai-ajl-2025
+unzip bttai-ajl-2025.zip -d data/
+
+* Launch Jupyter Notebook to explore and run the model: jupyter notebook
 
 ---
 
