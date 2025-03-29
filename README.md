@@ -147,21 +147,18 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 * Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
 
 ---
-A final F1 score of 0.55188, securing the 21st position on the Kaggle leaderboard for the "Equitable AI for Dermatology" competition. ​
 
-Overall Model Performance:
+Performance Metrics
+Training Accuracy: The model achieved a **training accuracy of 100%**, indicating that it learned the training data effectively.​
 
-Training Accuracy: 100%​
-ScienceDirect
+Validation Accuracy: The **validation accuracy was approximately 58%**, suggesting a significant drop from the training accuracy. This disparity points to potential overfitting, where the model performs well on training data but struggles to generalize to unseen data.​
 
-Validation Accuracy: Approximately 58%​
-
+Kaggle Leaderboard Score: The model secured the **21st position on the Kaggle leaderboard with a final F1 score of 0.55188**.
 The high training accuracy indicates that the model learned the training data effectively. However, the significant drop in validation accuracy suggests potential overfitting, where the model may not generalize well to unseen data.​
-IJCA
 
 Performance Across Different Skin Tones:
 
-An essential aspect of this competition was ensuring equitable performance across diverse skin tones. While specific performance metrics per skin tone category were not provided, the dataset's imbalance—favoring lighter skin tones—likely impacted the model's effectiveness on underrepresented groups. Addressing this imbalance is crucial to prevent perpetuating existing biases in dermatological assessments.​
+An essential aspect of this competition was ensuring equitable performance across diverse skin tones. The dataset's imbalance—favoring lighter skin tones—likely impacted the model's effectiveness on underrepresented groups. Addressing this imbalance is crucial to prevent perpetuating existing biases in dermatological assessments.​
 
 Insights from Model Fairness Evaluation:
 
