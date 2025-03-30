@@ -169,15 +169,17 @@ This project is not just about building a better model- it’s about challenging
 ---
 
 ## **🚀 Next Steps & Future Improvements**
-
-**Address the following:**
-
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
-
-#### Mitigation Strategies: To enhance fairness, we can consider implementing:​
-
+### Model Limitations
+* Our model reaches 100% training accuracy but only ~58% on validation data, indicating it memorizes training examples without generalizing well.
+* The Xception network pre-trained on ImageNet is optimized for everyday images—not close-up dermatological details. It may miss the subtle color gradients, textures, and lesion borders crucial for accurate skin condition classification.
+ 
+### With More Time/ Resources...
+* Collect more images, especially for underrepresented skin conditions among the 114 classes, to better reflect real-world diversity.
+* Explore models pre-trained on dermatology-specific datasets or further fine-tune the current model on a clinically rich dataset to capture domain nuances.
+* Experiment with sophisticated augmentation methods (e.g., mixup, CutMix) and consider ensembling multiple architectures for improved performance.
+* Implement fairness evaluation frameworks to assess and ensure equitable performance across different demographic groups.
+  
+### Mitigation Strategies: To enhance fairness, we can consider implementing:​
 * Data Augmentation: Increase the representation of underrepresented skin tones through techniques such as image rotation, scaling, and color adjustments.​
 * Class Weighting: Adjust the loss function to assign higher weights to underrepresented classes, encouraging the model to pay more attention to these classes during training.​
 * Transfer Learning with Diverse Datasets: Incorporate additional datasets that are more representative of diverse populations to improve the model's generalizability.
