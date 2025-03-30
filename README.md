@@ -136,10 +136,9 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 ## **📈 Results & Key Findings**
 
 ### Performance Metrics
-* **Training Accuracy:** The model achieved a **training accuracy of 100%**, indicating that it learned the training data effectively.​
+* **Training Accuracy:** The model achieved a **training accuracy of 100%**, indicating that it learned the training data effectively.​ The high training accuracy indicates that the model learned the training data effectively. However, the significant drop in validation accuracy suggests potential overfitting, where the model may not generalize well to unseen data.​
 * **Validation Accuracy:** The **validation accuracy was approximately 58%**, suggesting a significant drop from the training accuracy. This disparity points to potential overfitting, where the model performs well on training data but struggles to generalize to unseen data.​
 * **Kaggle Leaderboard Score:** The model secured the **21st position on the Kaggle leaderboard with a final F1 score of 0.55188**, placing us in roughly the 70th percentile among all teams.
-* The high training accuracy indicates that the model learned the training data effectively. However, the significant drop in validation accuracy suggests potential overfitting, where the model may not generalize well to unseen data.​
 
 ### Performance Across Different Skin Tones:
 
