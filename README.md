@@ -183,7 +183,7 @@ We established stratified validation sets based on Fitzpatrick skin tones to mon
 ### 🗣️ EDA for Accessible Communication
 We turn our detailed data analysis and fairness measures into visualizations that tell a story. Specifically, these important patterns and imbalances in our data explains AI bias in a way that’s easy for both experts and the community to understand, allowing for meaningful conversation on these issues.
 
-### 🌍 Broader Impact on Healthcare Equity: 
+### 🌍 Broader Impact on Healthcare Equity: Dr. Joy Buolamwini’s “Unmasking AI”
 Our work could change how AI is used in dermatology. By reducing bias in our data and models, we help cut healthcare disparities. In short, our goal is to ensure every patient- no matter their skin tone- gets an accurate and fair diagnosis.
 
 This journey is not just about building a better model- it’s about challenging the status quo, inspiring change, and fighting for algorithmic justice in healthcare.
@@ -202,5 +202,9 @@ This journey is not just about building a better model- it’s about challenging
 
 ## **📄 References & Additional Resources**
 
-* Cite any relevant papers, articles, or tools used in your project
+* Buolamwini, J. (n.d.). Unmasking AI: AJL Official Action Guide. Algorithmic Justice League. Retrieved from
+https://drive.google.com/file/d/1kYKaVNR_l7Abx2kebs3AdDi6TlPviC3q/view
+* What does “fairness” mean for machine learning systems? (n.d.). Haas School of Business, University of California, Berkeley. Retrieved from
+https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf
+
 
