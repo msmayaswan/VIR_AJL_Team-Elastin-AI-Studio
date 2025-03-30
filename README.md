@@ -135,20 +135,7 @@ Skin condition detection plays a critical role in healthcare, influencing early 
 
 ## **📈 Results & Key Findings**
 
-**Describe (as applicable):**
-
-* Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
-* How your model performed overall
-* How your model performed across different skin tones (AJL)
-* Insights from evaluating model fairness (AJL)
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
-
----
-
-Performance Metrics
+### Performance Metrics
 Training Accuracy: The model achieved a **training accuracy of 100%**, indicating that it learned the training data effectively.​
 
 Validation Accuracy: The **validation accuracy was approximately 58%**, suggesting a significant drop from the training accuracy. This disparity points to potential overfitting, where the model performs well on training data but struggles to generalize to unseen data.​
@@ -156,21 +143,14 @@ Validation Accuracy: The **validation accuracy was approximately 58%**, suggesti
 Kaggle Leaderboard Score: The model secured the **21st position on the Kaggle leaderboard with a final F1 score of 0.55188**.
 The high training accuracy indicates that the model learned the training data effectively. However, the significant drop in validation accuracy suggests potential overfitting, where the model may not generalize well to unseen data.​
 
-Performance Across Different Skin Tones:
+### Performance Across Different Skin Tones:
 
 An essential aspect of this competition was ensuring equitable performance across diverse skin tones. The dataset's imbalance—favoring lighter skin tones—likely impacted the model's effectiveness on underrepresented groups. Addressing this imbalance is crucial to prevent perpetuating existing biases in dermatological assessments.​
 
-Insights from Model Fairness Evaluation:
+### Insights from Model Fairness Evaluation:
 
-Class Imbalance: The dataset exhibited a significant class imbalance, with certain skin conditions and skin tones being underrepresented. This imbalance can lead to biased predictions, where the model performs better on well-represented classes and skin tones, potentially resulting in misdiagnoses for underrepresented groups.​
-
-Mitigation Strategies: To enhance fairness, consider implementing:​
-
-Data Augmentation: Increase the representation of underrepresented skin tones through techniques such as image rotation, scaling, and color adjustments.​
-
-Class Weighting: Adjust the loss function to assign higher weights to underrepresented classes, encouraging the model to pay more attention to these classes during training.​
-
-Transfer Learning with Diverse Datasets: Incorporate additional datasets that are more representative of diverse populations to improve the model's generalizability.
+The dataset exhibited a significant class imbalance, with certain skin conditions and skin tones being underrepresented. This imbalance can lead to biased predictions, where the model performs better on well-represented classes and skin tones, potentially resulting in misdiagnoses for underrepresented groups.​
+  
 ## **🖼️ Impact Narrative**
 
 As Dr. Randi mentioned in her challenge overview, ***“Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”***
@@ -186,7 +166,7 @@ We turn our detailed data analysis and fairness measures into visualizations tha
 ### 🌍 Broader Impact on Healthcare Equity: Dr. Joy Buolamwini’s “Unmasking AI”
 Our work could change how AI is used in dermatology. By reducing bias in our data and models, we help cut healthcare disparities. In short, our goal is to ensure every patient- no matter their skin tone- gets an accurate and fair diagnosis.
 
-This journey is not just about building a better model- it’s about challenging the status quo, inspiring change, and fighting for algorithmic justice in healthcare.
+This project is not just about building a better model- it’s about challenging the status quo, inspiring change, and fighting for algorithmic justice in healthcare.
 
 ---
 
@@ -197,6 +177,12 @@ This journey is not just about building a better model- it’s about challenging
 * What are some of the limitations of your model?
 * What would you do differently with more time/resources?
 * What additional datasets or techniques would you explore?
+
+#### Mitigation Strategies: To enhance fairness, we can consider implementing:​
+
+* Data Augmentation: Increase the representation of underrepresented skin tones through techniques such as image rotation, scaling, and color adjustments.​
+* Class Weighting: Adjust the loss function to assign higher weights to underrepresented classes, encouraging the model to pay more attention to these classes during training.​
+* Transfer Learning with Diverse Datasets: Incorporate additional datasets that are more representative of diverse populations to improve the model's generalizability.
 
 ---
 
