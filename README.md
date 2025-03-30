@@ -173,16 +173,20 @@ Class Weighting: Adjust the loss function to assign higher weights to underrepre
 Transfer Learning with Diverse Datasets: Incorporate additional datasets that are more representative of diverse populations to improve the model's generalizability.
 ## **🖼️ Impact Narrative**
 
-**Answer the relevant questions below based on your competition:**
+As Dr. Randi mentioned in her challenge overview, ***“Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”***
 
-**AJL challenge:**
+Inspired by Dr. Joy Buolamwini’s “Unmasking AI” and the principles of the Algorithmic Justice League, our team has taken deliberate steps to ensure our dermatology AI model works equitably for all skin tones. Here’s how:
 
-As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”
-As you answer the questions below, consider using not only text, but also illustrations, annotated visualizations, poetry, or other creative techniques to make your work accessible to a wider audience.
-Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
+### 🛡️ Ensuring Fair Model Evaluation: 
+We established stratified validation sets based on Fitzpatrick skin tones to monitor model performance across different groups. This approach allows us to detect discrepancies and adjust our training strategy if our model underperforms on darker skin tones, thus guarding against potential misdiagnoses in real-world clinical settings.
 
-1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
-2. What broader impact could your work have?
+### 🗣️ EDA for Accessible Communication
+We turn our detailed data analysis and fairness measures into visualizations that tell a story. Specifically, these important patterns and imbalances in our data explains AI bias in a way that’s easy for both experts and the community to understand, allowing for meaningful conversation on these issues.
+
+### 🌍 Broader Impact on Healthcare Equity: 
+Our work could change how AI is used in dermatology. By reducing bias in our data and models, we help cut healthcare disparities. In short, our goal is to ensure every patient- no matter their skin tone- gets an accurate and fair diagnosis.
+
+This journey is not just about building a better model- it’s about challenging the status quo, inspiring change, and fighting for algorithmic justice in healthcare.
 
 ---
 
